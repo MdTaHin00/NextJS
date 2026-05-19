@@ -2,12 +2,19 @@
 
 //! ai method a  -> 5cathAllSegment ar page file o asva
 
+import NotFound from "../not-found";
+
 const CatchAllSegments = async ({params} : {params : Promise<{catchAllSeg:string[]}>})=>{
 
      //? catchSeg:string[] -> catchSeg value string array asva tai
 
     //! CatchSegments route data array hoy asay
     const{catchAllSeg} = await params ;
+
+    //! not-found method call 
+    if(catchAllSeg?.length > 3){
+        NotFound()
+    }
 
     return(
         <>
