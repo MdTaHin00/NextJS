@@ -1,7 +1,9 @@
+import React from 'react'
+
 function page() {
   return (
     <div>
-      blog
+      Register Page 
     </div>
   )
 }
