@@ -9,6 +9,7 @@ const navItem =[
     {name:"About", href:"/about"},
     {name:"Contact", href:"/contact"},
     {name:"Blog", href:"/blog"},
+    {name:"Books", href:"/books"},
 ]
 
 function NavBar() {
