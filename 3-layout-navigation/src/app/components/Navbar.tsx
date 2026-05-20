@@ -1,5 +1,8 @@
+'use client'
+//! client page tai -> 'use client' deta hoyca
+
 import Link from 'next/link'
-import React from 'react'
+import { usePathname } from 'next/navigation'
 
 const navItem =[
     {name:"Home", href:"/"},
@@ -9,6 +12,11 @@ const navItem =[
 ]
 
 function NavBar() {
+
+  //! usePathname -> use kore tai operal 'use client' code deta hoy
+  const pathName = usePathname()
+  
+
   return (
     <div>
       <header className='flex  justify-between items-center max-w-7xl mx-auto p-4 border-b'>
@@ -17,9 +25,11 @@ function NavBar() {
           </div>
           <ul className='flex space-x-4 items-center'>
             {
-                navItem.map((item,index) => (
-                    <li key={index}><Link href={item.href}>{item.name}</Link></li>
-                ))
+                navItem.map((item,index) => {
+                  const isActive = pathName === item.href ;
+                  return (
+                    <li key={index}><Link className={`${isActive ? "font-bold text-red-400" : ""}`} href={item.href}>{item.name}</Link></li>
+                )})
             }
           </ul>
       </header>
