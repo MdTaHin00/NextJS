@@ -4,7 +4,7 @@ type PageProps = {
     searchParams: { [key: string]: string | string[] | undefined }
 }
 
-const SingleBooksPage = async ({ params, searchParams }) => {
+const SingleBooksPage = async ({ params, searchParams }: PageProps ) => {
 
     const { slug } = await params;
 
