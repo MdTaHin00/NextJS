@@ -6,7 +6,7 @@ async function CategoryPage ({params} : {params:{category : string}}) {
 
   return (
     <div>
-      <h1>Product CategoryPage <span className='text-2xl font-bold text-gray-300'>{category}</span></h1>
+      <h1>Product CategoryPage <span classNameName='text-2xl font-bold text-gray-300'>{category}</span></h1>
     </div>
   )
 }

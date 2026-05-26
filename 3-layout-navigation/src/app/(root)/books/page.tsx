@@ -10,9 +10,9 @@ const bookPost = [
 const BookPage = () => {
     return (
         <>
-            <div className="text-2xl font-bold mb-4  mt-5">
+            <div classNameName="text-2xl font-bold mb-4  mt-5">
                 <h2>Books Post</h2>
-                <ul className="space-y-2">
+                <ul classNameName="space-y-2">
                     {
                         bookPost.map((book, index) => (
                             <li key={index}>

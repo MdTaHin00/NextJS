@@ -24,16 +24,18 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  console.log("layout page");
+  
   return (
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Navbar/>
-       <main className="mt-10"> {children}</main>
+        <Navbar />
+        <main className="mt-10"> {children}</main>
         <footer className="mt-20">Footer</footer>
-        </body>
+      </body>
     </html>
   );
 }
