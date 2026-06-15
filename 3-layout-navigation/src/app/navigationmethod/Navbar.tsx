@@ -20,16 +20,16 @@ function NavBar() {
 
   return (
     <div>
-      <header classNameName='flex  justify-between items-center max-w-7xl mx-auto p-4 border-b'>
+      <header className='flex  justify-between items-center max-w-7xl mx-auto p-4 border-b'>
           <div>
             <Link href="/">Logo</Link>
           </div>
-          <ul classNameName='flex space-x-4 items-center'>
+          <ul className='flex space-x-4 items-center'>
             {
                 navItem.map((item,index) => {
                   const isActive = pathName === item.href ;
                   return (
-                    <li key={index}><Link classNameName={`${isActive ? "font-bold text-red-400" : ""}`} href={item.href}>{item.name}</Link></li>
+                    <li key={index}><Link className={`${isActive ? "font-bold text-red-400" : ""}`} href={item.href}>{item.name}</Link></li>
                 )})
             }
           </ul>

@@ -3,7 +3,7 @@ import React from 'react'
 function page() {
   return (
     <div>
-      <h1 classNameName='text-xl text-emerald-400'>Nested Route Customer page</h1>
+      <h1 className='text-xl text-emerald-400'>Nested Route Customer page</h1>
     </div>
   )
 }

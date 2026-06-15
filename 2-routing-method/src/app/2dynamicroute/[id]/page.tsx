@@ -6,7 +6,7 @@ const DynamicRoute = async ({ params }: { params: Promise<{ id: string }> }) => 
     return (
         <>
             <div>
-                Dynamic Route Value <span classNameName="text-3xl text-sky-300"> {id}</span>
+                Dynamic Route Value <span className="text-3xl text-sky-300"> {id}</span>
             </div>
         </> 
     )

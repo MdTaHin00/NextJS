@@ -11,7 +11,7 @@ const SingleBooksPage = async ({ params, searchParams }: PageProps ) => {
     const resolvedSearchParams = await searchParams
 
     return (
-        <div classNameName="space-y-3 mt-5 ">
+        <div className="space-y-3 mt-5 ">
             <p>Single books Page : {slug}</p>
             <ul>
                 {
