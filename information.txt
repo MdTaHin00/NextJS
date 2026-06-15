@@ -1,3 +1,7 @@
+'use client'
+ client page kas koray  -> 'use client' deta hoy
+ ar 'use client' ai word first line deta hoy
+
 2-> 2-routing-method
    auth
    {/* (auth) -> folder a () use kolar janno url a auth deta hova na */}
@@ -17,6 +21,13 @@
    _book -> kono folder ar first ( _ ) user kola private folder hoy
    
 4-> 4 a advanced-dashboard ai method
+
    @user -> kono folder ar name agak @ ata dela sai folder search ar kas korva na 
    @-> user method reload data nan tai (default.tsx) ai file all code add kora
 
+   intercepting route  
+   (.) -> same level ar janno
+   (..) one level ar janno
+   (..)(..) two level ar janno 
+   (...) root app directory
+   intercepting Route -> use korlay same name anno folder kas / show korva na , sodu (.)/(..)/(...) folder name kas kola
