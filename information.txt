@@ -31,3 +31,6 @@
    (..)(..) two level ar janno 
    (...) root app directory
    intercepting Route -> use korlay same name anno folder kas / show korva na , sodu (.)/(..)/(...) folder name kas kola
+
+
+5-> 5nextGram - a using Parallel Intercepting Routes method
