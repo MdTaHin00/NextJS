@@ -34,3 +34,9 @@
 
 
 5-> 5nextGram - a using Parallel Intercepting Routes method
+
+6-> 6-api-route-handlers
+ route.ts -> route.ts file name same hola route method kas korva
+
+ 1RequestMethod folder
+ url search: localhost:3000/1RequestMethod
