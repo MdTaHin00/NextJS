@@ -33,7 +33,6 @@ export async function PATCH (request : Request , {params} : {params : Promise<{i
     user[index] = {...user[index] , ...body } ;
 
     return Response.json(user[index]) ;
-
 }
 
 
@@ -47,3 +46,5 @@ export async function DELETE(request:Request,{params} : {params : Promise <{id:s
 
     return Response.json({message: "User deleted successFully", deleteUser})
 }
+
+
