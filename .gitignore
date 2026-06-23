@@ -11,6 +11,14 @@ node_modules
 dist
 dist-ssr
 *.local
+*package.json
+*postcss.config.mjs
+*package-lock.json
+*next.config.ts
+*eslint.config.mjs
+*AGENTS.md 
+*CLAUDE.md 
+
 
 # Editor directories and files
 .vscode/*
