@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import Comments from "./Comments";
+import Lifecycle from "./Lifecycle";
 
 
 type Post = {
@@ -31,6 +32,10 @@ const PostPage = async ({params} : {params: Promise<{id:string}>}) =>{
            <Suspense fallback={<p className="text-2xl font-bold m-10">Loading comments...</p>}>
             <Comments postId={id}/>
            </Suspense>
+
+          <div className="mt-10">
+             <Lifecycle/>
+          </div>
 
         </div>
     )
