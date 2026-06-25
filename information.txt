@@ -39,4 +39,14 @@
  route.ts -> route.ts file name same hola route method kas korva
 
  1RequestMethod folder
- url search: localhost:3000/1RequestMethod
+   url search: localhost:3000/1RequestMethod
+ 2heardersMethod
+   postman jakan thaka value asva thar name  Authorization method
+ 3-cookiemethod 
+   cookie set and cookie get method
+
+7->  7-middleware
+  middleware.ts -> middleware method 
+  suspense/[id]/page.tsx ->  loading show kolar method 
+  suspense/[id]/Lifecyle.tsx -> value add kola new value 
+  dynamic/[id] -> 
