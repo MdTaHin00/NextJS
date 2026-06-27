@@ -50,4 +50,4 @@
   suspense/[id]/page.tsx ->  loading show kolar method 
   suspense/[id]/Lifecyle.tsx -> value add kola new value 
   dynamic/[id] -> .next/dev/server/app ai file exta file add na hoy tar method
-  
+  envmethod -> .env file code use method
