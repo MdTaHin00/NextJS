@@ -2,7 +2,7 @@ import React from 'react'
 
 async function page({ params }: { params: { id: string, category: string } }) {
 
-    const { category, id } =await params;
+    const { category, id } = await params;
 
     return (
         <div>

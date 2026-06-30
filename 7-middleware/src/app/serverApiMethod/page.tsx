@@ -1,7 +1,16 @@
 import ClientApiTypes from "../clientApiMethod/clientTypes";
 
 const ServerApiPost = async () => {
-    const res = await fetch("https://jsonplaceholder.typicode.com/posts")
+    await new Promise((resolve) => setTimeout( resolve, 1000))
+    const res = await fetch("https://jsonplaceholder.typicode.com/posts",{
+        //* invalition method
+        next:{
+            //* revalidate -> koto somay por operal url reload lorva tar function
+            revalidate:259200 // 3 day
+            //* kon tags ar opr
+            //? tags:['posts'] 
+        }
+    })
     const posts = await res.json();
 
     return (
@@ -11,8 +20,8 @@ const ServerApiPost = async () => {
                 {
                     posts.slice(0, 20).map((post : ClientApiTypes) => (
                         <div key={post.id} className="shadow-lg p-5 ">
-                            <h2>{post.id}</h2>
-                            <h4>{post.title}</h4>
+                            <h2> {post.id} </h2>
+                            <h4> {post.title} </h4>
                             <p>{post.body}</p>
                         </div>
                     ))
