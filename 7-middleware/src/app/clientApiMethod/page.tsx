@@ -43,9 +43,9 @@ const ClientApi = () => {
             <h1>Client Post Api</h1>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
                 {
-                    posts.map((post) => (
+                    posts.slice(0,20).map((post) => (
                         <div key={post.id} className="shadow-lg p-5 ">
-                            <h2>{post.userId}</h2>
+                            <h2>{post.id}</h2>
                             <h4>{post.title}</h4>
                             <p>{post.body}</p>
                         </div>
