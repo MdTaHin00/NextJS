@@ -30,3 +30,21 @@ export async function getUserPosts(userId: number): Promise<UserIdPops[]>{
   }
   return res.json()
 }
+
+
+export async function getUserData(){
+  const res = await fetch(`https://jsonplaceholder.typicode.com/users`) ;
+
+  if(!res.ok){
+    console.log("Failed User Data");
+  }
+  return res.json() ;
+}
+
+export async function getPostsData(){
+  const res = await fetch(`https://jsonplaceholder.typicode.com/posts`)
+  if(!res.ok){
+    console.log("Failed post data");
+  }
+  return res.json() ;
+}
